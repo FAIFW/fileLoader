@@ -1,0 +1,33 @@
+.outcome {
+  @include flexy(column, center);
+  //background-color: lightgreen;
+  margin-top: 5vw;
+
+  &__block {
+    width: 80%;
+    height: calc(60px + 40 * ((100vw - 320px) / 1366));
+    margin: 1vw 0vw;
+  }
+
+  &__link {
+    @include flexy(row, center, center);
+    font-size: 2.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(250, 249, 248, 1);
+    gap: 2em;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 1);
+
+    &:hover {
+      background-color: rgb(162, 151, 184, 1);
+      color: black;
+      transition: 0.3s;
+    }
+
+    &:active {
+      position: relative;
+      top: 3px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.income {
+  &__form {
+    @include flexy(row, space-evenly);
+  }
+
+  &__label {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+
+    @include flexy(column, center, center);
+    width: 11em;
+    height: 2.2em;
+    background-color: rgba(128, 128, 128, 1);
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(162, 151, 184, 1);
+      color: black;
+      transition: 0.3s;
+    }
+
+    &:active {
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__submit {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+
+    @include flexy(column, center, center);
+    width: 7.9em;
+    height: 2.2em;
+    background-color: rgba(128, 128, 128, 1);
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(162, 151, 184, 1);
+      color: black;
+      transition: 0.3s;
+    }
+
+    &:active {
+      position: relative;
+      top: 3px;
+    }
+  }
+}

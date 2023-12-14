@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loader panel</title>
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="income">
+          <form
+            class="income__form"
+            enctype="multipart/form-data"
+            method="post"
+          >
+            <label class="income__label" for="loader">загрузить файл</label>
+            <input
+              class="income__input"
+              id="loader"
+              type="file"
+              name="loaderInput"
+            />
+
+            <input class="income__submit" type="submit" value="Отправить" />
+          </form>
+        </div>
+
+        <div class="outcome">
+          <div class="outcome__block">
+            <a class="outcome__link" href="" download="">
+              <img src="./src/img/iconDownload.png" alt="" />
+              <span>download file here</span>
+            </a>
+          </div>
+
+          <div class="outcome__block">
+            <a class="outcome__link" href="" download="">
+              <img src="./src/img/iconDownload.png" alt="" />
+              <span>download file here</span>
+            </a>
+          </div>
+
+          <div class="outcome__block">
+            <a class="outcome__link" href="" download="">
+              <img src="./src/img/iconDownload.png" alt="" />
+              <span>download file here</span>
+            </a>
+          </div>
+
+          <div class="outcome__block">
+            <a class="outcome__link" href="" download="">
+              <img src="./src/img/iconDownload.png" alt="" />
+              <span>download file here</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

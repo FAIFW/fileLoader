@@ -1,0 +1,36 @@
+html {
+  font-family: 'Arial';
+  font-size: 14px;
+  font-weight: 400;
+  color: $mainTextColor;
+}
+
+body {
+  //background-color: rgb(245, 234, 245);
+  background: url('../img/whiteConcrete.jpg') 100% no-repeat;
+  padding: 2vw;
+}
+
+/*            COMMON CLASSES              */
+.stop-scroll {
+  overflow: hidden;
+}
+//for preloader:
+.hideContent {
+  display: none !important;
+}
+
+.container {
+  @include centry(80%);
+  padding: 2vw;
+  //background-color: lightblue;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
